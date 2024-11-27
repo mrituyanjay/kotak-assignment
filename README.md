@@ -121,12 +121,12 @@ $ terraform apply
 ```
 ![build Job Image](./images/eks.png)
 
-### EKSCTL setup
+### Downloading Kubeconfig
 
 Run the below command on jenkins server to connect to EKS using kubectl 
 
 ```bash
-$ aws eks update-kubeconfig --region ap-south-1 --name cluster-name
+$ aws eks update-kubeconfig --region ap-south-1 --name kotak-eks-cluster
 ```
 
 ## Dockerization
@@ -166,13 +166,13 @@ This Jenkins pipeline automates the entire deployment process for both the Expre
 ![Pipeline Run Overview](./images/run_pipeline.png)
 
 
-## CI/CD
+## End to End CI/CD PIPELINE
 
-### Build job url : http://3.111.203.48:8080/blue/organizations/jenkins/Application%2FAssignment%2FFrontend%2FEXPRESS_API%2FEXPRESS_API_ApplicationSetupJob/detail/EXPRESS_API_ApplicationSetupJob/13/pipeline
+### Pipeline URL : http://3.111.203.48:8080/blue/organizations/jenkins/Application%2FAssignment%2FFrontend%2FEXPRESS_API%2FEXPRESS_API_ApplicationSetupJob/detail/EXPRESS_API_ApplicationSetupJob/13/pipeline
 ![build Job Image](./images/express_api_pipeline.png)
 
 
-#### Deploy job url: http://3.111.203.48:8080/blue/organizations/jenkins/Application%2FAssignment%2FFrontend%2FRAIL_API%2FRAIL_API_ApplicationSetupJob/detail/RAIL_API_ApplicationSetupJob/2/pipeline/
+#### Pipeline URL: http://3.111.203.48:8080/blue/organizations/jenkins/Application%2FAssignment%2FFrontend%2FRAIL_API%2FRAIL_API_ApplicationSetupJob/detail/RAIL_API_ApplicationSetupJob/2/pipeline/
 ![Deploy Job Image](./images/rails_ci_pipelne.png)
 
 
