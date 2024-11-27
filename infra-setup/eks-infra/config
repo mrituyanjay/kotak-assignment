@@ -1,0 +1,27 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://C2274F1D563FA9941366E6C189C5820A.gr7.ap-south-1.eks.amazonaws.com
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJYUxIV3ZqcEF1a2N3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TkRFeE1qY3hNREU1TWpGYUZ3MHpOREV4TWpVeE1ESTBNakZhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUUNxdWVBQWQ0MnA5d2MrME8wampNdTI3TXVITEVYSTRHTzNHWUNGU0pBYmtJZU5PZ3Z1WnJUblo1TjcKaXR6ZWlMRHNLYThoTHRhb2g4bi9CMzRPOXRTOS80THROUEJnM3RrTGFzUzQyV1dCUmYxRzdQSm9GNGU1Tit2ZgpUQVJMWmk0YkYzMW9ocm0wd0NyNWowcUtaWnJrZW05OXdxc242RXUvblorT2FNeGUwWUh5eHZEdGc0WUZKRUJmCk5NSjlNbGZ5VDNZSzEvN0ZTWXZkTWRrNGp1NStkdmVjMTZtanR1bzRha0xjcm5RKzFTdUhmVXJCakhxN0YzNlEKcXdjSWhsc042dDdZb2ozMkxjYnNJWjhONWVDaC85WnYvUzdPcVczZCtFSHF5eHBObG9nNmJBWnFkMnMwM21ldApxSjFTMWJnRDgvOFYvMGlsSndpZU5SZ2plcjFIQWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJUbjlTZU92bk5JTWh0ZWVXVDJUVE51VFJPTUxUQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQ1RhcG9WUnNqUAoxOWowY09IV3RmMEdEWUJvbE1RT0RlTnY3Wm1zajdHbElyMDZaczJteHlxLzg4eHBYWG1rKys3WTBzM2pNbXkyCmJLVlB2R29TWlpaOXBzYVVkOERhOXRLbGNtbDRIc0U4QmhyWDV4SUovVE9Edyt2WDRVTHlRT3JBQjYyWDZ1MmEKOStXNmFnWXFGN3JHakVrWUUrN2lXYjhsdkZoM1BXTVVFcjBxUGxrT3podEtqSVduRUhiU21OZ2VHSWhiNDN0dgoyc2pVTjJHZWt6eTd3RnBQa3F0cG43MmZsODZISUltRng3N1gyWkl0ejErRVpBRFBUUzZWdzJ2OEQyRXV0UHZZCmJ3Y3Q0cE9rekx0K21GRnp2NENWeVJVR2p3c3VSZHkySFN6NlQvYmhKRjJmUWRlMW1xSjJrWkZvV0lpMEZVY1gKRmNwSHNsV2psSzV6Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+  name: arn:aws:eks:ap-south-1:862341425846:cluster/kotak-eks-cluster
+contexts:
+- context:
+    cluster: arn:aws:eks:ap-south-1:862341425846:cluster/kotak-eks-cluster
+    user: arn:aws:eks:ap-south-1:862341425846:cluster/kotak-eks-cluster
+  name: arn:aws:eks:ap-south-1:862341425846:cluster/kotak-eks-cluster
+current-context: arn:aws:eks:ap-south-1:862341425846:cluster/kotak-eks-cluster
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:ap-south-1:862341425846:cluster/kotak-eks-cluster
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - ap-south-1
+      - eks
+      - get-token
+      - --cluster-name
+      - kotak-eks-cluster
+      command: aws
