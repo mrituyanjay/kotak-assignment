@@ -193,6 +193,4 @@ Application is accessible at below endpoints:
 
 ![\rails Image](./images/rails_frontend.png)
 
-### Note: Since I have not created any DNS please use below host entry to access it on browser
 
-#### 43.204.180.45 test.express.com test.rails.com
