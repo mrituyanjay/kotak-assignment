@@ -78,7 +78,7 @@ $ terraform destroy
 This backend will create an S3 bucket with versioning enabled and a DynamoDB table for managing Terraform state locks
 
 ```bash
-$ cd benchmark-eks-setup/infra-setup/backend
+$ cd kotak-assignment/infra-setup/backend
 $ terraform init
 $ terraform plan
 $ terraform apply
@@ -114,7 +114,7 @@ $ terraform apply
 Creating eks cluster with 1 worker node. 
 
 ```bash
-$ cd benchmark-eks-setup/infra-setup/eks-infra
+$ cd kotak-assignment/infra-setup/eks-infra
 $ terraform init
 $ terraform plan
 $ terraform apply
